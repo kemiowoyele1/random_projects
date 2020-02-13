@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> local storage</title>
+	<link rel="stylesheet" type="text/css" href="todo.css">
+	<!-- <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js "></script>
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>  
+ -->
+	<style media = "screen">
+		input, button {
+			padding: 7px;
+			border: 1px solid navy;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+<div id="container1">
+<h2 id="title">local Storage - JavaScript -dcode</h2>
+<fieldset>
+	<legend>
+		insert data
+	</legend>
+	<input type="text" id="inpkey" placeholder="input key...">
+	<input type="text" id="inpValue" placeholder="input value...">
+	<button id="btnInsert">insert data</button>
+</fieldset>
+<fieldset>
+<legend> local storage</legend>
+<div id="lsOutput"></div>
+</fieldset>
+<button id="clear1">clear data</button>
+<p>day 3</p>
+</div>
+</body>
+<script type="text/javascript">
+	
+     const inpkey = document.getElementById("inpkey");
+     const inpValue = document.getElementById("inpValue");
+     const btnInsert = document.getElementById("btnInsert");
+     const lsOutput = document.getElementById("lsOutput");
+     var   clear1   = document.getElementById("clear1");
+
+     btnInsert.onclick = function() {
+     	 const key = inpkey.value;
+     	 const value = inpValue.value;
+     	  if (key && value) {
+     	 	localStorage.setItem(key, value);
+     	 	location.reload(); 
+
+     	 }
+     };
+
+     for (let i = 0; i < localStorage.length; i++){
+     	const key1 = localStorage.key(i);
+     	const value1 = localStorage.getItem(key1);
+
+     	lsOutput.innerHTML += key1 + ":  "+ value1 + "<br />";
+     	// lsOutput.innerHTML += ":  "
+      //   lsOutput.innerHTML +=  value1;
+      //   lsOutput.innerHTML += "<br />";
+ 
+     }
+
+     clear1.onclick = function(){
+      localStorage.clear();
+      location.reload();
+     }
+	</script>
+</html> 

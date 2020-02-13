@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>current time</title>
+	</head>
+<body>
+<style>
+	body{
+		color: red;
+		background-image: url(4.jpg);
+	}
+</style>
+<div class="container">
+	<p>day 1</p>
+</div>
+<script >
+	function printTime() {
+		// var div = document.querySelector(".container");
+		 var d = new Date();
+		var hours = d.getHours();
+		var mins = d.getMinutes();
+		var secs = d.getSeconds();
+        var p = document.getElementsByTagName('p');
+		document.body.innerHTML = d ;
+
+	}
+	setInterval(printTime, 1000);
+	document.body.style.color = "RGB(246, 17, 126) ";
+	document.body.style.fontSize = "2em";
+	document.body.style.padding = "40px"
+	document.body.style.textShadow = "1px 1px black"
+    document.body.style.background = "#122365";
+	</script>
+</body>
+</html>

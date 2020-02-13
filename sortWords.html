@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>random number</title>
+</head>
+<body>
+<style>
+	body {
+		background-image: url(5.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-size: 30px;
+		color: silver;
+		text-shadow: 1px 1px black;
+
+	}
+	button {
+
+		text-align: center;
+		padding: 3px;
+		width: 100%;
+		height: 40px;
+		background-image: url(3.jpeg);
+		color: silver;
+		text-shadow: 1px 1px black;
+		font-size: 30px;
+		display: inline-block;
+		float: center;
+		margin: 10px;
+	}
+</style>
+<p> Cat           dog           own       owl       boy       bay          hay      tow         now          sow         egg       yam      cup          leg   
+Cut          fat              cry          try         not      can           buy             
+Tie           low            dry          die         new    few          hew
+Row         pea            tea          fry          ant     rat            hat
+Bat           pig              bee        pan        our      ban          say
+Buy          flu              fly           mew      dew     wow        yes
+Sun          mat           sat           sit            eat     ate           fun
+See          saw           sew          new     old         tow         toe
+</p>
+
+<button onclick="myFunction()">Click  here to sort the words alphabetically</button>
+<button onclick="myReverseFunction()">Click  here to sort the words in reverse order</button>
+<button onclick="myRandomFunction()">Click  here to sort the words randomly</button>
+
+<p id="demo"></p>
+<script >
+		var words= [ " cat", " dog", " own", " owl", " boy", " bay", " hay", " tow", " now", " sow", " egg",  " yam", " cup", " leg",  
+ " cut", " fat"," cry", " try", " not", " can", " buy", " tie", " low", " dry", " die", " few", " hew", " row", " pea", " tea",     " ant", " rat", " hat", " bat", " pig", " bee", " pan", " our", " ban", " say", " buy", " flu", " fly", " mew", " dew", " wow", " yes", " sun", " mat", " sat"," sit", " eat", " ate", " fun", " see", " saw", " sew", " new", " old", " tow", " toe",
+  
+];
+
+	function myFunction() {
+		//sort the words in alphabrtical order
+		var x = words.sort();
+document.getElementById("demo").textContent = x;
+
+	}
+
+		function myReverseFunction() {
+		//sort the words in alphabrtical order
+		var x = words.reverse();
+document.getElementById("demo").textContent = x;
+
+}
+
+		function myRandomFunction() {
+					var words= [ " cat", " dog", " own", " owl", " boy", " bay", " hay", " tow", " now", " sow", " egg",  " yam", " cup", " leg",  
+ " cut", " fat"," cry", " try", " not", " can", " buy", " tie", " low", " dry", " die", " few", " hew", " row", " pea", " tea",     " ant", " rat", " hat", " bat", " pig", " bee", " pan", " our", " ban", " say", " buy", " flu", " fly", " mew", " dew", " wow", " yes", " sun", " mat", " sat"," sit", " eat", " ate", " fun", " see", " saw", " sew", " new", " old", " tow", " toe",
+  
+];
+
+	// 		var input = this;
+	// 	//sort the words in alphabrtical order
+	// 	var i;
+	// 	for (var i = 0; i < words.length; i++) {
+
+	// 	var x = Math.floor(Math.random() * (i+1));
+	//   var y = input[x];
+	//  }
+	// return input
+
+ //       document.getElementById("demo").textContent = x;
+      var rand = words(Math.floor(Math.random()*words.length));
+      document.getElementById("demo").textContent = rand;
+}
+</script>
+</body>
+</html>

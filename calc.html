@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>input calculator</title>
+	<!-- <link rel="stylesheet" type="text/css" href="todo.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	 -->
+</head>
+<body>
+<style>
+     body{
+     	background-image: url(3.jpeg);
+     	 }
+	.button{
+		width: 50px;
+		height:  30px;
+		margin-top: 20px;
+        background-color: powderblue;
+	    border: 3px solid darkslateblue;
+	
+	}
+	.container {
+		margin: 100px;
+			}
+
+.input {
+	font-size: 18px;
+	background-color: powderblue;
+	width: 100%;
+	padding:  13px 13px 13px 20px;
+	box-sizing: border-box;
+	color: darkslateblue;
+	border: 3px solid darkslateblue;
+	
+
+}
+
+.input:focus{
+	border: 3px solid #2980b9;
+    outline: none;
+}
+</style>
+<div class="container">
+<form name="calc">
+<input type="text" name="c" class="input">
+<input type="button" value="=" class="button" 
+OnClick="calc.c.value = eval(calc.c.value)">
+
+</form>
+</div>
+</body>
+</html>

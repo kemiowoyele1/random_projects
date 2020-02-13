@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.obiseun.helloworld"
+    versionCode = "1"
+    version     = "1.0.7" >
+	
+
+  <name>weight converter</name>
+
+  <description>
+     current date and time app. 
+  </description>
+
+  <author href="https://facebook.com/HamzaJirah" email="hamzajirah@gmail.com">
+      Hamza is the lead, Jirah is the office errand boy.
+  </author>
+
+</widget>
